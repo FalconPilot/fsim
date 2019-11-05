@@ -1,0 +1,23 @@
+{
+  "name": "fsim",
+  "version": "0.1.0",
+  "repository": "git@github.com:FalconPilot/fsim.git",
+  "author": "Ralph' Potato <fpilot.github@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "12.8.0",
+    "yarn": "1.17.3"
+  },
+  "scripts": {
+    "dev": "yarn run clean && yarn run init && concurrently \"yarn run dev:back\" \"yarn run dev:front\"",
+    "dev:back": "cd back && yarn run dev",
+    "dev:front": "cd front && yarn run dev",
+    "clean": "shx rm -rf dist",
+    "init": "shx mkdir dist"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "shx": "^0.3.2"
+  }
+}

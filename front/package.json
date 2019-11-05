@@ -1,0 +1,16 @@
+{
+  "name": "fsim-front",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:FalconPilot/fsim.git",
+  "author": "Ralph' Potato <fpilot.github@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "12.8.0",
+    "yarn": "1.17.3"
+  },
+  "scripts": {
+    "dev": "echo TODO"
+  }
+}
